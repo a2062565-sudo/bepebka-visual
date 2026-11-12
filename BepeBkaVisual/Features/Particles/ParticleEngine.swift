@@ -192,9 +192,9 @@ struct ParticleFieldView: View {
             angle += time * (0.2 + p4 * 0.5)
         }
 
-        if halo {
-            alpha *= 0.72
-        }
+//        if halo {
+//            alpha *= 0.72
+//        }
 
         if config.direction == .swirl {
             let distance = hypot(point.x - size.width / 2, point.y - size.height / 2)

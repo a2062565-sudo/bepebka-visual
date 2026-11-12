@@ -333,8 +333,8 @@ struct ConfigsView: View {
                         if active {
                             BVBadge(
                                 text: store.t("ACTIVE", "АКТИВЕН"),
-                                icon: "checkmark",
                                 tint: DSColor.success,
+                                icon: "checkmark",
                                 filled: true
                             )
                         }

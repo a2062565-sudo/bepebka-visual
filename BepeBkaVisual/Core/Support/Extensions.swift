@@ -292,8 +292,8 @@ struct StarShape: Shape {
             let angle = (Double(index) / Double(total)) * .pi * 2 - .pi / 2
             let radius = index.isMultiple(of: 2) ? outer : inner
             let point = CGPoint(
-                x: center.x + cos(angle) * radius,
-                y: center.y + sin(angle) * radius
+                x: center.x + CGFloat(Foundation.cos(angle)) * radius,
+                y: center.y + CGFloat(Foundation.sin(angle)) * radius
             )
             if index == 0 {
                 path.move(to: point)

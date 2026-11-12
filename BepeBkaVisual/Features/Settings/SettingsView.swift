@@ -344,8 +344,8 @@ struct SettingsView: View {
 
                     BVBadge(
                         text: store.settings.ui.language.shortCode,
-                        icon: "globe",
-                        tint: store.accentColor
+                        tint: store.accentColor,
+                        icon: "globe"
                     )
                 }
 
