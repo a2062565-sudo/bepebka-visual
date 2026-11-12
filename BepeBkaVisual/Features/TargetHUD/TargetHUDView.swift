@@ -58,7 +58,10 @@ struct TargetHUDView: View {
                         icon: "sparkles",
                         title: store.t("Appearance Animation", "Анимация появления"),
                         options: HUDAnimationStyle.allCases,
-                        selection: $store.settings.targetHUD.animation,
+                        selection: Binding(
+                            get: { store.settings.targetHUD.animation },
+                            set: { store.settings.targetHUD.animation = $0 }
+                        ),
                         label: { store.t($0.titleEN, $0.titleRU) }
                     )
 
